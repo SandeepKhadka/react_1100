@@ -1,4 +1,4 @@
-/* .projects{
+.projects{
   display: grid;
   grid-template-columns: repeat(4,1fr);
   gap: 1rem;
@@ -6,7 +6,7 @@
 .project{
   border: 1px solid black;
   padding: 20px;
-} */
+}
 table{
   border-collapse: collapse;
 }
@@ -14,4 +14,5 @@ table{
 
 th, tr, td{
   border: 1px solid black;
+  padding: 1rem;
 }

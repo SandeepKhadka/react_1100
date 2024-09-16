@@ -1,9 +1,12 @@
 import { createRoot } from 'react-dom/client'
 import "./index.css"
+import Table from './pages/Table';
+import Todo from './pages/Todo';
+import Counter from './pages/Counter';
 
 let Project = (props) => {
-  console.log({"title" : props.title} );
-  
+  console.log({ "title": props.title });
+
   return <div className="project">
     <img src="https://picsum.photos/200/300" alt="" />
     <h2>{props.title}</h2>
@@ -14,47 +17,10 @@ let Project = (props) => {
 
 createRoot(document.getElementById('root')).render(
   <div>
-    <table>
-      <thead>
-        <th>Name</th>
-        <th>Days</th>
-        <th>Description</th>
-        <th>Action</th>
-      </thead>
-      <tbody>
-        <tr>
-          <td>React</td>
-          <td>10 days</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus ab a cupiditate, doloribus magni repellendus, exercitationem ipsam eius maiores suscipit, accusantium commodi molestias possimus delectus aliquid. Est, blanditiis iure.</td>
-          <td><button type="button">Delete</button></td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>10 days</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus ab a cupiditate, doloribus magni repellendus, exercitationem ipsam eius maiores suscipit, accusantium commodi molestias possimus delectus aliquid. Est, blanditiis iure.</td>
-          <td><button type="button">Delete</button></td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>10 days</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus ab a cupiditate, doloribus magni repellendus, exercitationem ipsam eius maiores suscipit, accusantium commodi molestias possimus delectus aliquid. Est, blanditiis iure.</td>
-          <td><button type="button">Delete</button></td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>10 days</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus ab a cupiditate, doloribus magni repellendus, exercitationem ipsam eius maiores suscipit, accusantium commodi molestias possimus delectus aliquid. Est, blanditiis iure.</td>
-          <td><button type="button">Delete</button></td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>10 days</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus ab a cupiditate, doloribus magni repellendus, exercitationem ipsam eius maiores suscipit, accusantium commodi molestias possimus delectus aliquid. Est, blanditiis iure.</td>
-          <td><button type="button">Delete</button></td>
-        </tr>
-      </tbody>
-    </table>
-   
+    {/* <h1>Main</h1>
+    <Table /> */}
+    {/* <Todo /> */}
+    <Counter />
 
   </div>
 
