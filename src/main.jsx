@@ -3,6 +3,8 @@ import "./index.css"
 import Table from './pages/Table';
 import Todo from './pages/Todo';
 import Counter from './pages/Counter';
+import CounterState from './pages/CounterState';
+import Theme from './pages/Theme';
 
 let Project = (props) => {
   console.log({ "title": props.title });
@@ -20,7 +22,9 @@ createRoot(document.getElementById('root')).render(
     {/* <h1>Main</h1>
     <Table /> */}
     {/* <Todo /> */}
-    <Counter />
+    {/* <Counter /> */}
+    {/* <CounterState/> */}
+    <Theme />
 
   </div>
 
