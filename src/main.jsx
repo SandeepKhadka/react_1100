@@ -1,10 +1,6 @@
 import { createRoot } from 'react-dom/client'
 import "./index.css"
-import Table from './pages/Table';
-import Todo from './pages/Todo';
-import Counter from './pages/Counter';
-import CounterState from './pages/CounterState';
-import Theme from './pages/Theme';
+import App from './App';
 
 let Project = (props) => {
   console.log({ "title": props.title });
@@ -19,12 +15,7 @@ let Project = (props) => {
 
 createRoot(document.getElementById('root')).render(
   <div>
-    {/* <h1>Main</h1>
-    <Table /> */}
-    {/* <Todo /> */}
-    {/* <Counter /> */}
-    {/* <CounterState/> */}
-    <Theme />
+    <App />
 
   </div>
 
