@@ -4,12 +4,16 @@ const TodoState = () => {
   const [todos, setTodo] = useState([])
   function addTodo(e) {
     e.preventDefault()
-    console.log(e.target.title.value);
     // todos.push(e.target.title.value) ** wrong way
     // let temp = todos ** wrong way
     let temp = [...todos, e.target.title.value]
     setTodo(temp)
     // setTodo(todos.push(e.target.title.value))
+  }
+
+  function deleteTodo(index) {
+    let temp = todos.filter((el, i) => i != index)
+    setTodo(temp)
   }
   return (
     <>
@@ -20,12 +24,16 @@ const TodoState = () => {
         <button>Add</button>
       </form>
 
+     
+
 
       <ul>
         {
-          todos.map(el => {
+          todos.map((el, index) => {
             return (<>
-              <li>{el}</li> <button>delete</button>
+              <li>{el}</li> <button onClick={() => {
+                deleteTodo(index)
+              }}>delete</button>
             </>)
           })
         }
